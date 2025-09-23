@@ -23,3 +23,10 @@
 
 ### Решение 1
 
+```
+SELECT DISTINCT a.district AS 'Район' 
+FROM address a
+WHERE a.district LIKE 'K%a' AND a.district NOT LIKE '% %';
+```
+![Screenshot_1](https://github.com/MrVanG0gh/Netology_12-03_SQL_p1/blob/main/Screenshots/Screenshot_1.png)
+### Решение 2
