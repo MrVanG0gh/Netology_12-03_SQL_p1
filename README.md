@@ -32,3 +32,11 @@ WHERE a.district LIKE 'K%a' AND a.district NOT LIKE '% %';
 
 ---
 ### Решение 2
+
+```
+SELECT *
+FROM payment p
+WHERE p.payment_date BETWEEN '2005-06-15' AND '2005-06-18 23:59:59'
+AND p.amount > 10;
+```
+![Screenshot_2](https://github.com/MrVanG0gh/Netology_12-03_SQL_p1/blob/main/Screenshots/Screenshot_2.png)
