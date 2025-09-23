@@ -51,3 +51,13 @@ ORDER BY r.rental_date DESC
 LIMIT 5;
 ```
 ![Screenshot_3](https://github.com/MrVanG0gh/Netology_12-03_SQL_p1/blob/main/Screenshots/Screenshot_3.png)
+
+---
+### Решение 4
+
+```
+SELECT LOWER(cus.last_name) AS 'second name', REPLACE(LOWER(cus.first_name), 'll', 'pp') AS 'first name'
+FROM sakila.customer AS cus
+WHERE cus.first_name LIKE 'Kelly' OR cus.first_name LIKE 'Willie';
+```
+![Screenshot_4](https://github.com/MrVanG0gh/Netology_12-03_SQL_p1/blob/main/Screenshots/Screenshot_4.png)
