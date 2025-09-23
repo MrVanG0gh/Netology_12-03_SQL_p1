@@ -57,8 +57,8 @@ LIMIT 5;
 ### Решение 4
 
 ```
-SELECT LOWER(cus.last_name) AS 'second name', REPLACE(LOWER(cus.first_name), 'll', 'pp') AS 'first name'
+SELECT REPLACE(LOWER(cus.last_name), 'll', 'pp') AS 'last name', REPLACE(LOWER(cus.first_name), 'll', 'pp') AS 'first name'
 FROM sakila.customer AS cus
-WHERE cus.first_name LIKE 'Kelly' OR cus.first_name LIKE 'Willie';
+WHERE cus.first_name LIKE 'Kelly' OR cus.first_name LIKE 'Willie' AND cus.active = 1;
 ```
 ![Screenshot_4](https://github.com/MrVanG0gh/Netology_12-03_SQL_p1/blob/main/Screenshots/Screenshot_4.png)
