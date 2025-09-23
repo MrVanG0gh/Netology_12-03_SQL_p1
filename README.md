@@ -61,4 +61,4 @@ SELECT REPLACE(LOWER(cus.last_name), 'll', 'pp') AS 'last name', REPLACE(LOWER(c
 FROM sakila.customer AS cus
 WHERE cus.first_name LIKE 'Kelly' OR cus.first_name LIKE 'Willie' AND cus.active = 1;
 ```
-![Screenshot_4](https://github.com/MrVanG0gh/Netology_12-03_SQL_p1/blob/main/Screenshots/Screenshot_4.png)
+![Screenshot_4](https://github.com/MrVanG0gh/Netology_12-03_SQL_p1/blob/main/Screenshots/Screenshot_4_1.png)
