@@ -40,3 +40,14 @@ WHERE p.payment_date BETWEEN '2005-06-15' AND '2005-06-18 23:59:59'
 AND p.amount > 10;
 ```
 ![Screenshot_2](https://github.com/MrVanG0gh/Netology_12-03_SQL_p1/blob/main/Screenshots/Screenshot_2.png)
+
+---
+### Решение 3
+
+```
+SELECT *
+FROM sakila.rental r
+ORDER BY r.rental_date DESC
+LIMIT 5;
+```
+![Screenshot_3](https://github.com/MrVanG0gh/Netology_12-03_SQL_p1/blob/main/Screenshots/Screenshot_3.png)
